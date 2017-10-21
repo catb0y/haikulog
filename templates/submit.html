@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Form -->
+<div class="row">
+  <form action="/submit" method="POST">
+
+    <input type="text" name="title" placeholder="Enter a title">
+
+    <br><textarea rows="1" type="text" name="line1" placeholder="Enter the first line (5 syllables!)" required></textarea>
+    <br><textarea rows="1" type="text" name="line2" placeholder="Enter the second line (7 syllables!)" required></textarea>
+    <br><textarea rows="1" type="text" name="line3" placeholder="Enter the third line (5 syllables again!)" required></textarea>
+
+
+    <br><input type="text" name="nickname" placeholder="Enter a nickname">
+    <br><input class="button-primary" type="submit" value="Submit">
+
+  </form>
+</div>
+
+{% endblock %}

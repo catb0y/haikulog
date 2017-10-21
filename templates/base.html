@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Press+Start+2P|Ubuntu+Mono|Zilla+Slab+Highlight|Miriam+Libre" rel="stylesheet">
+
+
+  <title>PoetryLog</title>
+  <meta name="description" content="PoetryLog!">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<div class="container">
+  <body>
+    <a href="{{ url_for('main') }}"><h2>Hi from poetrylog</h2></a>
+
+<!-- Allowing messages to be flashed in an alertbox -->
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <script>
+      var messages = {{ messages | safe }};
+      for (var i=0; i < messages.length; i++) {
+        alert(messages[i]);
+      }
+    </script>
+  {% endif %}
+{% endwith %}
+
+
+{% block content %}
+{% endblock %}
+
+</div>
+
+</body>
+</html>

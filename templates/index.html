@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<a class="button" href="{{url_for('submit')}}">Write a new haiku</a>
+
+    <p>Here are all the haikus:</p>
+
+
+  <!-- Haikus start here -->
+  {% for post in posts %}
+  <div class="row">
+    <div class="one-third column"><strong>{{ post.title }}</strong></div>
+    <br><div class="one-third column">{{ post.line1 }}</div>
+    <br><div class="one-third column">{{ post.line2 }}</div>
+    <br><div class="one-third column">{{ post.line3 }}<br>~{{ post.nickname }}</div>
+  </div>
+  {% endfor %}
+
+
+{% endblock %}
