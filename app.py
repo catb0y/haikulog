@@ -11,7 +11,7 @@ import math
 # Create SQLAlchemy object
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
-app.secret_key = "super secret key"
+app.secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxx"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.sqlite')
 db = SQLAlchemy(app)
 
