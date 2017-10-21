@@ -1,3 +1,3 @@
 # haikulog
 Anonymously share your haikus with the world.
-Made with Flask.
+Made with Flask, Skeleton (CSS).
