@@ -163,6 +163,9 @@ a {
   text-decoration: none; }
 a:hover {
   color: #000000; }
+a:link {
+  color: #000005;
+  text-decoration: none; }
 
 
 
