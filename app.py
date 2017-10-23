@@ -73,8 +73,7 @@ if __name__== '__main__':
 
 # Breakdown:
 
-# Tweak CSS
-    # align center?
+# Tweak CSS: font, details
 # Add randomized radio avatars to nicknames (pls)
 
 # Test post:
