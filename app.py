@@ -73,7 +73,8 @@ if __name__== '__main__':
 
 # Breakdown:
 
-# Change database?
+# Change database? + add decent haikus?
+# HTML : add about page and links?
 # Tweak CSS: font, details
 # Add randomized radio avatars to nicknames (pls): <img src="{{url_for('static'), filename='imgs/av1.png'}}" style="border-radius:50%">
 
