@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<<a class="button button-primary" href="{{url_for('submit')}}">Write a new haiku</a>
+<a class="button button-primary" href="{{url_for('submit')}}">Write a new haiku</a>
 
     <p>Here are all the haikus:</p>
 
@@ -13,8 +13,8 @@
     <div class="four column">{{ post.line2 }}</div>
     <div class="five column">{{ post.line3 }}</div>
     <br><br><div class="two column"><img src="{{url_for('static', filename='imgs/av1.png')}}" style="height:30px">
-      <strong> ~ {{ post.nickname }}</strong></div><br>
-  </div>
+      <strong> ~ {{ post.nickname }}</strong></div>
+  </div><br><br>
   {% endfor %}
 
 
