@@ -12,7 +12,7 @@ import math
 basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.secret_key = "super secret key"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///' + os.path.join(basedir, 'app.sqlite')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://cmywjovsikggoa:b053b238edc0707da4001eb19d8b1c8cad7190ec030c31a1afea17a67322ab56@ec2-184-72-248-8.compute-1.amazonaws.com:5432/darsbuec7bb0us'
 db = SQLAlchemy(app)
 
 # Models
