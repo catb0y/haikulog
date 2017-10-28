@@ -59,7 +59,6 @@ def submit():
                 db.session.commit()
         else:
             flash("Your lines should contain exactly 5, 7, and 5 syllables!")
-            return redirect(url_for('submit'))
 
 
         return redirect(url_for('main'))
