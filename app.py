@@ -80,3 +80,11 @@ if __name__== '__main__':
 
 # Test post:
 #post1 = Post(title="Haiku", line1="accomodation", line2="similitudinary", line3="accomodation", nickname="Spacecow")
+
+#The Birds In The Trees ~ Haiku 5-7-5
+#by Barbara Lynn Terry
+
+
+#I sit here and see
+#The birds singing in the trees
+#Flitting back and forth.
