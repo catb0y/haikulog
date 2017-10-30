@@ -11,14 +11,9 @@ import math
 
 # Create SQLAlchemy object
 app = Flask(__name__)
-<<<<<<< HEAD
 app.secret_key = "super secret key"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-=======
-app.secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxx"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.sqlite')
->>>>>>> bddf382bfb13c13a66afb15fd399f77376cb2c81
 db = SQLAlchemy(app)
 
 # Models
