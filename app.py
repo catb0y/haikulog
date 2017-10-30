@@ -17,7 +17,7 @@ app.secret_key = "super secret key"
 app.config['HEROKU_POSTGRESQL_BLACK_URL'] = """
 postgres://dayjxqmgfwirvj:8abcb93a65e01d03d23c9c43e43e74a187fd464c2198a122fbbcd9006d91ce3b@ec2-54-83-40-208.compute-1.amazonaws.com:5432/datd52rju45245
 """
-db = SQLAlchemy(app)
+#db = SQLAlchemy(app)
 
 # Models
 class Post(db.Model):
