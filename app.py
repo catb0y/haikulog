@@ -14,10 +14,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.secret_key = "super secret key"
 
-DB_URL = """
-postgres://dayjxqmgfwirvj:8abcb93a65e01d03d23c9c43e43e74a187fd464c2198a122fbbcd9006d91ce3b@ec2-54-83-40-208.compute-1.amazonaws.com:5432/datd52rju45245
-"""
-app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 db = SQLAlchemy(app)
 
 # Models
