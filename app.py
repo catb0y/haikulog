@@ -6,7 +6,6 @@ from textstat.textstat import textstat
 import os
 import random
 import math
-import postgresql
 
 
 
