@@ -1,22 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-<p>Make the world a slightly nicer place sharing an anonymous haiku.</p>
-<div class="container-fluid">
+<div class="container">
+  <p>Make the world a slightly nicer place sharing an anonymous haiku.</p>
   <a class="button button-primary" href="{{url_for('submit')}}">Write a new haiku</a>
 </div>
 
   <!-- Haikus start here -->
+<div class="container">
   {% for post in posts %}
-  <div class="row">
-    <h6>{{ post.title }}</h6>
-    <div class="three column">{{ post.line1 }}</div>
-    <div class="four column">{{ post.line2 }}</div>
-    <div class="five column">{{ post.line3 }}</div>
-    <br><br><div class="two column"><img src="{{url_for('static', filename='imgs/av1.png')}}" style="height:30px">
-      <strong> ~ {{ post.nickname }}</strong></div>
-  </div><br><br>
+      <div class="row">
+        <h6>{{ post.title }}</h6>
+        <div class="three column">{{ post.line1 }}</div>
+        <div class="four column">{{ post.line2 }}</div>
+        <div class="five column">{{ post.line3 }}</div>
+        <br><br><div class="two column"><img src="{{url_for('static', filename='imgs/av1.png')}}" style="height:30px">
+          <strong> ~ {{ post.nickname }}</strong></div>
+      </div><br><br>
   {% endfor %}
-
+</div>
 
 {% endblock %}
