@@ -10,7 +10,6 @@ import math
 
 
 # Create SQLAlchemy object
-#basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.secret_key = "super secret key"
 
