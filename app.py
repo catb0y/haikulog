@@ -74,10 +74,9 @@ if __name__== '__main__':
 
 # Breakdown:
 
-# Change database? + add decent haikus?
-# HTML : add about page and links?
-# Tweak CSS: font, details
-# Add randomized radio avatars to nicknames (pls): <img src="{{url_for('static'), filename='imgs/av1.png'}}" style="border-radius:50%">
+# Github connection
+# Handle database from CLI
+# add favicon?
 
 # Test post:
 #post1 = Post(title="Haiku", line1="accomodation", line2="similitudinary", line3="accomodation", nickname="Spacecow")
