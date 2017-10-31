@@ -72,13 +72,9 @@ if __name__== '__main__':
 
 
 
-# Breakdown:
 
-# Github connection
-# Handle database from CLI
-# add favicon?
 
-# Test post:
+# Test posts:
 #post1 = Post(title="Haiku", line1="accomodation", line2="similitudinary", line3="accomodation", nickname="Spacecow")
 
 #The Birds In The Trees ~ Haiku 5-7-5
